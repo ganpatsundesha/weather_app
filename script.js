@@ -25,6 +25,7 @@ async function checkWeather(city) {
     }
     else { 
         weatherBox.style.display = 'block'
+        weatherBox.style.marginTop = '30px'
         temp.textContent =  `Temprature: ` + data.main.temp + `°C`;
         cityName.textContent = `City: ` + data.name;
         humidity.textContent = `Humidity: ` + data.main.humidity + `g/kg`;
