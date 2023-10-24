@@ -32,14 +32,15 @@ async function checkWeather(city) {
         wind.textContent = `Wind Speed: ` + data.wind.speed + `km/h`;
         sky.textContent = `Sky: ` + data.weather[0].description;
         country.textContent = ` Country: ` + data.sys.country;
-        error.style.display = 'none'
+        error.style.display = 'none';
     }
 }
 
 submitBox.addEventListener("click", (e) => {
-    if(searchBox.value == " " || searchBox.value == undefined) {
+    if(searchBox.value == "" || searchBox.value == undefined) {
         error.textContent = `Please Enter Valid City Name`;
-        error.style.display = 'block'
+        error.style.display = 'block';
+        weatherBox.style.display = 'none';
     }
     else {
         checkWeather(searchBox.value);
