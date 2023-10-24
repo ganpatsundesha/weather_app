@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+body {
+    height: 100vh;
+}
+.weather-card {
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.weather-box {
+    margin-top: 30px;
+}
+
+.weather-box div+div {
+    margin-top: 16px;
+}
+
+.weather-box div {
+    font-size: 24px;
+}
