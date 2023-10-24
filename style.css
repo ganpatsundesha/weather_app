@@ -63,3 +63,14 @@ form input {
     align-items: center;
     height: 100vh;
 }
+
+@media (max-width: 800px) {
+    .weather-card {
+        margin: 0 16px;
+    }
+}
+@media (max-width: 576px) {
+    form {
+        flex-direction: column;
+    }
+}
